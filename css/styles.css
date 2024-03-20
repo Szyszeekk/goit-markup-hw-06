@@ -46,6 +46,7 @@ p {
   border-bottom: 1px solid #e7e9fc;
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+  display: flex;
 }
 
 .web-head-div {
@@ -105,7 +106,7 @@ p {
   width: 100%;
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: 6px;
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
@@ -133,6 +134,26 @@ p {
 .mail-and-phone:hover,
 .mail-and-phone:focus {
   color: #404bbf;
+}
+
+.hamburger {
+  display: none;
+}
+
+.hamburger-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  cursor: pointer;
+  margin-right: 16px;
+  margin-top: 20px;
+}
+
+.hamburger-list-item {
+  background-color: black;
+  width: 20px;
+  height: 3px;
+  border-radius: 2px;
 }
 
 .heading-head {
@@ -741,4 +762,195 @@ footer {
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    max-width: 320px;
+  }
+
+  .web-head-div {
+    margin-left: 0;
+    height: 56px;
+  }
+
+  .web-head-nav-list {
+    display: none;
+  }
+
+  .address-section {
+    display: none;
+  }
+
+  .logo-blue {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.16667;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .heading-head {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    margin-bottom: 72px;
+  }
+
+  .advantages-list {
+    flex-direction: column;
+  }
+
+  .advantages-list-icon {
+    display: none;
+  }
+
+  .advantages-list-item {
+    margin-top: 72px;
+    min-width: 320px;
+  }
+
+  .advantages-head {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+  }
+
+  .advantages-paragraph {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .our-team-list {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .our-team-list-point {
+    min-width: 320px;
+  }
+
+  .our-team-list-point img {
+    width: 100%;
+    object-fit: contain;
+  }
+
+  .our-team-list-point-paragraph {
+    margin-bottom: 8px;
+  }
+
+  .our-portfolio-list {
+    flex-direction: column;
+  }
+
+  .our-portfolio-list-point {
+    min-width: 320px;
+  }
+
+  .footer-div {
+    flex-direction: column;
+    gap: 72px;
+  }
+
+  .footer-div-logo-and-paragraph {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-div-social-media {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+  }
+
+  .foot-form-paragraph {
+    min-width: 320px;
+    text-align: center;
+  }
+
+  .foot-form {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 320px;
+  }
+
+  .foot-form-button {
+    max-width: 165px;
+  }
+
+  .modal-window {
+    width: 100%;
+    height: 100%;
+    margin: 8px 16px 9px;
+  }
+
+  .modal-menu {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+  }
+
+  .modal-nav-and-address {
+    padding-top: 72px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .modal-nav-list-item {
+    margin-top: 40px;
+  }
+
+  .address-modal-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .mail-and-phone {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .navigation {
+    font-size: 36px;
+  }
+
+  .navigation-current::after {
+    display: none;
+  }
+
+  .modal-social-media-list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .modal-contact-and-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+  }
 }
