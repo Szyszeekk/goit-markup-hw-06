@@ -106,7 +106,7 @@ p {
   width: 100%;
   position: absolute;
   left: 0;
-  bottom: 6px;
+  bottom: 5px;
   height: 4px;
   background-color: #404bbf;
   border-radius: 2px;
@@ -166,6 +166,7 @@ p {
   max-width: 496px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 48px;
 }
 
 .heading {
@@ -470,10 +471,7 @@ footer {
 .footer-div {
   display: flex;
   align-items: baseline;
-}
-
-.footer-div-logo-and-paragraph {
-  margin-right: 120px;
+  justify-content: space-between;
 }
 
 .footer-div-social-media-paragraph {
@@ -952,5 +950,85 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 48px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1158px) {
+  .address-section-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .navigation-current::after {
+    bottom: -7px;
+  }
+
+  .advantages-list-icon {
+    display: none;
+  }
+
+  .advantages-list {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .advantages-list-item {
+    width: calc((100% - 48px) / 2);
+  }
+
+  .advantages-head {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+  }
+
+  .advantages-paragraph {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
+
+  .our-team-list {
+    flex-wrap: wrap;
+    gap: 64px 24px;
+    margin-left: 108px;
+    margin-right: 108px;
+  }
+
+  .our-team-list-point {
+    width: calc((100% - 48px) / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .our-team-list-point img {
+    width: 100%;
+  }
+
+  .our-portfolio-list-point {
+    width: calc((100% - 48px) / 2);
+  }
+
+  .our-portfolio-list-point img {
+    width: 100%;
+  }
+
+  .footer-div {
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    width: calc((100% - 48px) / 2);
+  }
+
+  .foot-form-label {
+    display: flex;
+    justify-content: space-between;
   }
 }
