@@ -185,6 +185,16 @@ p {
   margin-right: auto;
 }
 
+@media (min-resolution: 192dpi) {
+  .heading {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office@2x.jpg);
+  }
+}
+
 .order-button {
   font-weight: 500;
   font-size: 16px;
