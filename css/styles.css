@@ -774,6 +774,10 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+  ul {
+    padding: 0;
+  }
+
   .container {
     max-width: 320px;
   }
@@ -938,13 +942,12 @@ footer {
     padding-top: 24px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 168px;
     height: 100%;
-    gap: 24px;
     padding-bottom: 40px;
   }
 
-  .modal-nav-list-item {
+  .modal-nav-list-item:nth-child(n + 2) {
     margin-top: 40px;
   }
 
@@ -981,7 +984,6 @@ footer {
   .modal-contact-and-socials {
     display: flex;
     flex-direction: column;
-    gap: 48px;
   }
 }
 
@@ -1013,7 +1015,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
-    gap: 24px 72px;
+    gap: 24px;
     max-width: 100%;
   }
 
