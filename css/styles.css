@@ -753,6 +753,7 @@ footer {
 
 .modal-window-form-etiquette-label-link {
   color: #4d5ae5;
+  text-decoration: underline;
 }
 
 .modal-window-form-button {
@@ -811,8 +812,14 @@ footer {
     margin-bottom: 72px;
   }
 
+  .advantages {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
   .advantages-list {
     flex-direction: column;
+    gap: 72px;
   }
 
   .advantages-list-icon {
@@ -820,8 +827,7 @@ footer {
   }
 
   .advantages-list-item {
-    margin-top: 72px;
-    min-width: 320px;
+    min-width: 288px;
   }
 
   .advantages-head {
@@ -840,6 +846,11 @@ footer {
     letter-spacing: 0.02em;
   }
 
+  .our-team {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
   .our-team-list {
     flex-direction: column;
     gap: 72px;
@@ -856,6 +867,11 @@ footer {
 
   .our-team-list-point-paragraph {
     margin-bottom: 8px;
+  }
+
+  .our-portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .our-portfolio-list {
@@ -919,11 +935,13 @@ footer {
   }
 
   .modal-nav-and-address {
-    padding-top: 72px;
+    padding-top: 24px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     height: 100%;
+    gap: 24px;
+    padding-bottom: 40px;
   }
 
   .modal-nav-list-item {
@@ -934,6 +952,10 @@ footer {
     display: flex;
     flex-direction: column;
     gap: 24px;
+  }
+
+  .address-modal-list li:first-child {
+    color: #4d5ae5;
   }
 
   .mail-and-phone {
@@ -978,6 +1000,11 @@ footer {
     max-width: 100%;
   }
 
+  .advantages {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
   .advantages-list-icon {
     display: none;
   }
@@ -992,6 +1019,7 @@ footer {
 
   .advantages-list-item {
     width: calc((100% - 24px) / 3);
+    min-width: 356px;
   }
 
   .advantages-head {
@@ -1008,6 +1036,11 @@ footer {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+  }
+
+  .our-team {
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .our-team-list {
@@ -1033,6 +1066,11 @@ footer {
     margin-bottom: 8px;
   }
 
+  .our-portfolio {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
   .our-portfolio-list-point {
     width: calc((100% - 24px) / 2);
   }
@@ -1044,12 +1082,17 @@ footer {
   .footer-div {
     flex-wrap: wrap;
     gap: 72px 24px;
-    width: calc((100% - 48px) / 2);
+    width: calc(100% - 24px);
     justify-content: center;
   }
 
   .foot-form-label {
     display: flex;
     justify-content: space-between;
+  }
+
+  .modal-window {
+    width: 408px;
+    height: 584px;
   }
 }
